@@ -11,4 +11,13 @@ if [ "$1" == "--help" ] || [ "$1" == "-h" ] || [ ! "$PROJECT_DIRECTORY" ]; then
     exit 1
 fi
 
-ln -sf "$PROJECT_DIRECTORY/static_anlaysis/.pre-commit-config.yaml" "$PROJECT_DIRECTORY/.pre-commit-config.yaml"
+config_files="
+.pre-commit-config.yaml
+.air-black.yaml
+.air-prospector.yaml
+"
+
+for config_file in $config_files; do
+	echo $config_file
+	ln -sf "$PROJECT_DIRECTORY/static_anlaysis/$config_file" "$PROJECT_DIRECTORY/$config_file"
+done

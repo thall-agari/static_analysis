@@ -40,7 +40,7 @@ repos:
     hooks:
     -   id: scss-lint
 -   repo: git://github.com/elidupuis/mirrors-sass-lint
-    sha: '5cc45653263b423398e4af2561fae362903dd45d'
+    rev: '5cc45653263b423398e4af2561fae362903dd45d'
     hooks:
     -   id: sass-lint
 -   repo: https://github.com/PyCQA/bandit
@@ -51,9 +51,10 @@ repos:
     rev: '7ff847e779347033ebbd9e3b88279e7f3a998b45'
     hooks:
     -   id: prospector
-        args: [-P, static_analysis/.prospector.yaml]
-#-   repo: https://github.com/psf/black
-#    rev: 19.3b0
-#    hooks:
-#    -   id: black
+        args: [-P, .air-prospector.yaml]
+-   repo: https://github.com/psf/black
+    rev: 19.3b0
+    hooks:
+    -   id: black
+        args: [--config, .air-pyproject.toml]
 # Will link our black configuration here.

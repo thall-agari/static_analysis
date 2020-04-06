@@ -1,0 +1,12 @@
+[tool.black]
+line-length = 20
+skip-string-normalization = true
+target-version = ['py36']
+exclude = '''
+(
+  /(
+      \.eggs
+    | \.git
+    | \.mypy_cache
+    | \.tox
+    | \.venv
