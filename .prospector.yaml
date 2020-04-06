@@ -1,0 +1,20 @@
+doc-warnings: true
+
+inherits:
+  - strictness_veryhigh
+
+pyflakes:
+  run: false
+
+pylint:
+  options:
+    max-line-length: 88
+  disable:
+    - missing-function-docstring
+    - missing-module-docstring
+
+pep257:
+  run: true
+  disable:
+    - D103
+    - D100
