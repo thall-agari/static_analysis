@@ -3,6 +3,9 @@ doc-warnings: true
 inherits:
   - strictness_veryhigh
 
+ignore-patterns:
+  - ^docs?/
+
 pyflakes:
   run: false
 
