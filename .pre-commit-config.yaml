@@ -57,4 +57,3 @@ repos:
     hooks:
     -   id: black
         args: [--config, .air-pyproject.toml]
-# Will link our black configuration here.
