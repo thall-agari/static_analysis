@@ -53,7 +53,7 @@ repos:
     rev: '7ff847e779347033ebbd9e3b88279e7f3a998b45'  # Use the sha / tag you want to point at
     hooks:
     -   id: prospector
-        args: [-P, .prospector.yaml]
+        args: [-P, static_analysis/.prospector.yaml]
 #-   repo: https://github.com/psf/black
 #    rev: 19.3b0
 #    hooks:
